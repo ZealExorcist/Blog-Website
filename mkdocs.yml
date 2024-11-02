@@ -2,6 +2,7 @@ site_name: My Docs
 site_url: https://zealexorcist.github.io/blog/
 nav:
   - Home: index.md
+  - About: about.md
 
 theme:
   name: material
