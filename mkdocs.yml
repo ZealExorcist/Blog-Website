@@ -3,6 +3,9 @@ site_url: https://zealexorcist.github.io/blog/
 nav:
   - Home: index.md
   - About: about.md
+  - Blog: 
+    - blog/index.md
+  - Tags: blog/tags.md
 
 theme:
   name: material
@@ -29,8 +32,21 @@ theme:
       accent: deep orange
   features:
     - navigation.footer
+    - navigation.indexes
     
-
+plugins:
+  - search
+  - blog:
+      archive_date_format: MMMM yyyy
+      categories_allowed:
+        - Cryptography
+        - Python
+        - General
+        - Forensics
+        - Web
+        - AI
+  - tags:
+      tags_file: blog/tags.md
 
 markdown_extensions:
   - attr_list
@@ -49,7 +65,9 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: simple/youtube
-      link: https://youtube.com/@james-willett
+    - icon: simple/github
+      link: https://github.com/ZealExorcist
     - icon: simple/linkedin
-      link: https://linkedin.com/in/willettjames
+      link: https://linkedin.com/in/rohan-nayakanti
+    - icon: simple/gmail
+      link: mailto:rohan.nayakanti@gmail.com
